@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <!-- <aos link> -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link rel="stylesheet" href="button.css">
+
+<!-- tailwind link -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<!--ends-->
+<!-- icon link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- icon ends -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/payment.js"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/animation.js"></script>
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="icon" href="./images/logo-removebg-preview (1).png">
+    <title>PAYMENT-FOR THEM</title>
+</head>
+<body>
+    
+    <div id="starshine">
+        <div class="template shine"></div>
+      </div>
+      <!-- nav start -->
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="./practice.html"><img class="logo" src="./images/logo-removebg-preview (1).png" alt=""></a>
+        <div id="myLinks">
+          
+          <a class="nav-items"  style="color: black;"href="./index.html">Home</a>
+          <a class="nav-items"  style="color: black;"href="./product.html">Product</a>
+          <a class="nav-items"  style="color: black;"href="./blog/blog.html">Blog</a>
+          <a class="nav-items"  style="color: black;"href="./customize.html">Customize Packing</a>
+          <a class="nav-items" style="color: black;" href="./contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" style="color: black;" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- End smartphone / tablet look -->
+      </div>
+      
+       <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script> 
+    
+     <!-- nav ends -->
+    <div class="container" data-aos="flip-up" data-aos-duration="2000">
+        <h2 class="title">PAYMENT FORM</h2>
+        <form action="thank.html" name="registration">
+      
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+          <br>
+          <label for="lastname">Last Name</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+          <br>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your Email">
+          <br>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+          <br>
+         <button id="submit">submit</button>
+        </form>
+      </div>
+      <footer  data-aos="zoom-in" data-aos-duration="2000">
+        <h4 class="heading">Book your gifts for any occasion! Contact us now for Delivery</h4>
+        <div class="icon">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+          <p id="copyright">&copy;ALL COPYRIGHTS RESERVED</p>
+        </div>
+      </footer>
+      </div>
+      <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
+<script>
+  $("#form").validate({
+    rules:{
+      username:{
+        required:true,
+        minlength:3
+      },
+      email:{
+        required:true,
+        email:true,
+      },
+      password:{
+        required:true,
+        minlength:8,
+      },
+      cpassword:{
+        Request:true,
+        equalTo:"#password"
+      }
+    
+    },
+    messages:{
+      username:{
+        required:"Username is required",
+        minlength:"Minimum length of username is 3"
+      },
+      email:{
+        required:"Email is required"
+      },
+      password:{
+        required:"password ia a required field",
+        minlength:"mininmum lengt of password is 3"
+      },
+      cpassword:{
+        required:"confirm password is required",
+        equalTo:"password does not match"
+      }
+    }
+
+})
+</script>

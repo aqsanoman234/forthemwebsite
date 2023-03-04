@@ -1,0 +1,371 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+ 
+}
+/* logo */
+#logo{
+  position:absolute;
+  width: 8%;
+  height: 12%;  
+   /* background-color: #fff;  */
+}
+ 
+/* NAVIGATION */
+nav {
+  overflow: auto;
+  margin: 0 auto;
+  /* background-color: rgb(179, 227, 227) !important; */
+  background: linear-gradient(#b6b6f8,#7bc7f9, white, #ffeee6);
+  box-shadow: 0px 5px 0px #dedede;
+  background-color: transparent;
+ }
+
+nav ul {
+  align-self: center;
+  margin-left:20%; 
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  float: left; 
+  padding-left: 3%;
+}
+nav ul li a {
+  display: block;
+  padding:  20px 15px;
+  text-decoration: none;
+  color: #37a5ee;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+nav.fill ul li a {
+  transition: all 2s;
+}
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/* Circle */
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #0c0c0b;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #24abd4;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+ @-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+/* slider */
+/* card css */
+#image{
+  width: 90%;
+  border-radius: 45em;
+}
+#card1{
+  background-color:rgb(114, 204, 210);
+  border-radius: 0%;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#card2{
+  background-color: #fff;
+  border-radius: 0%;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#card3{
+  background-color: #fff;
+  border-radius: 0%;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#card4{
+  background-color:rgb(114, 204, 210);
+  border-radius: 0%;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff !important;
+}
+#card5{
+  background-color: rgb(114, 204, 210);
+  border-radius: 0%;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#card9{
+  background-color: rgb(114, 204, 210);
+}
+#card6{
+  border-radius: 0%;
+  background-color: #fff;
+  font-size: 120%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+#carousel-indicators{
+  margin-top: 3%;
+}
+#cardpanel{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  /* margin-bottom: 2%; */
+}
+.flex{
+ display:flexbox;
+ margin-left: 30%;
+ margin-right: 30%;  
+ margin-top: 4%;
+ margin-bottom: 4%;
+}
+ /* card css end */
+/* ourstory */
+#ourstory
+{ 
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    
+}
+#hamarikahani{
+  margin-top: 4%;
+  margin-left: 0%;
+  width: 49em;
+  font-weight: bold;
+  color:#24abd4;
+  text-align: center;
+}
+#story1{
+  margin-top: 5%;
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  color: #006A5B;
+ 
+}
+#team{
+  width:70em;
+  border-radius: 45em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+button:hover{
+  transform:scale3d(34%)
+}
+#readmore{
+  margin-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 11em !important;
+  border-radius: 45em;
+  background-color:#388b9e;
+  color: #efefef;
+  margin-left: 31%;
+  margin-right:35% ;
+}
+/* our storyend */
+/* footer */
+footer .icon{
+  margin-left: 46%;
+  padding-top: 5%;
+  height: 35%;
+} 
+footer{
+  background: linear-gradient(#b6b6f8, #66c2ff, white, #ffeee6);
+  padding-top: 2%;
+  padding-bottom: 3%;
+  width: 100%;
+}
+.fa-brands{
+  float: left;
+  padding-left: 2%;
+  color: #66c2ff;
+  font-size: xx-large;
+}
+.fa-brands:hover{
+  color: rgb(46, 116, 121);
+}
+p{
+  text-align: center;
+  color: #226979;
+} 
+h5{
+  font-size: 4rem !important;
+  color:#24abd4;
+}
+h4{
+  padding-top: 2%;
+  text-align: center;
+  color: #226979;
+}
+.heading{
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.carousel-control-next{
+   box-shadow: none !important;
+}
+.carousel-control-prev{
+  box-shadow: none !important;
+}
+#preloader{
+  background: white url(../images/preloader.gif) no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+ }
+
+/*  pro1 */
+#pro1{
+
+}
+

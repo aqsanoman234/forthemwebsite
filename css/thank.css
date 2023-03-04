@@ -1,0 +1,272 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+/* logo */
+
+.wrapper {
+	position: relative;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+	overflow: hidden;
+  }
+  
+  .background {
+	position: absolute;
+	font-family: lucida handwriting;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background: linear-gradient(#004794, rgba(0, 71, 148, 0.5));
+  }
+  
+  .circle {
+	position: absolute;
+	border-radius: 50%;
+	background: linear-gradient(#009ce2, rgba(0, 156, 226, 0.4));
+	animation: pulse 7s infinite cubic-bezier(0.33, 0.5, 0.64, 1.43);
+  }
+  
+  .base {
+	height: 104.72vh;
+	width: 104.72vh;
+	animation-name: basePulse;
+  }
+  
+  .mid {
+	height: 64.72vh;
+	width: 64.72vh;
+	animation-name: midPulse;
+  }
+  
+  .top {
+	height: 40vh;
+	width: 40vh;
+	animation-name: topPulse;
+  }
+  
+  @keyframes basePulse {
+	0% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	6% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	16% {
+	  opacity: 0.5;
+	  transform: scale(1);
+	}
+	50% {
+	  opacity: 0.5;
+	  transform: scale(1);
+	}
+	92% {
+	  opacity: 0.5;
+	  transform: scale(1);
+	}
+	100% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+  }
+  
+  @keyframes midPulse {
+	0% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	4% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	14% {
+	  opacity: 0.7;
+	  transform: scale(1);
+	}
+	50% {
+	  opacity: 0.7;
+	  transform: scale(1);
+	}
+	94% {
+	  opacity: 0.7;
+	  transform: scale(1);
+	}
+	100% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+  }
+  
+  @keyframes topPulse {
+	0% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	2% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+	12% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	50% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	96% {
+	  opacity: 1;
+	  transform: scale(1);
+	}
+	100% {
+	  opacity: 0;
+	  transform: scale(0.75);
+	}
+  }
+  
+  svg {
+	z-index: 1;
+	width: 50vw;
+	max-width: 40rem;
+	height: auto;
+  }
+  
+  .logo,
+  .sparkles {
+	animation: logoReveal 7s infinite ease-in-out;
+  }
+  
+  @keyframes logoReveal {
+	0% {
+	  opacity: 0;
+	}
+	10% {
+	  opacity: 0;
+	}
+	25% {
+	  opacity: 1;
+	}
+	90% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
+  
+  .sparkles path {
+	fill: white;
+	transform-origin: 50% 50%;
+	transform-box: fill-box;
+	animation: sparkle var(--duration) var(--delay) infinite ease-in-out;
+  }
+  
+  @keyframes sparkle {
+	0% {
+	  transform: scale(0);
+	}
+	50% {
+	  transform: scale(0);
+	}
+	70% {
+	  transform: scale(-1, 0);
+	}
+	80% {
+	  transform: scale(1);
+	}
+	100% {
+	  transform: scale(0);
+	}
+  }
+h1 {
+	position: absolute;
+	color:white;
+	z-index: 1;
+	font-size: 10rem !important;
+	top: 1.7em;
+	left: 1.4em;
+	transition: 0.5s;
+	overflow: hidden;
+}
+h1:hover{
+	color: rgb(44, 152, 206);
+
+}
+h1::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,transparent,#fff,transparent);
+	transition-duration: 0.5s;
+
+}
+h1:hover::before{
+	left: 100%;
+}
+
+ 
+
+
+  footer .icon {
+    margin-left: 46%;
+    padding-top: 5%;
+    height: 35%;
+  }
+  
+  footer {
+    background: linear-gradient(#102f36, #154651, #1b5967, #ffeee6);
+    padding-top: 2%;
+    padding-bottom: 3%;
+    width: 100%;
+  }
+  
+  .fa-brands {
+    float: left;
+    padding-left: 2%;
+    color: #000000;
+    font-size: xx-large;
+  }
+  
+  .fa-brands:hover {
+    color: rgb(44, 60, 61);
+  }
+  
+  p {
+    text-align: center;
+    color: black;
+  }
+  
+  h5 {
+    font-size: 4rem !important;
+    color: #24abd4;
+  }
+  
+  h4 {
+    padding-top: 2%;
+    text-align: center;
+    color: #226979;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  #logo{
+	position: absolute;
+	z-index: 1;
+	left: 1%;
+	top:1%;
+  }
+  #icon{
+	width: 14%;
+  }

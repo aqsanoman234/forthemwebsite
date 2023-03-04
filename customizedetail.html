@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- predefined -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- icon link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animation links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- user defined -->
+   <link rel="stylesheet" href="./css/cutomizedetail.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/productdetail.css">
+  <link rel="icon" href="images/logo-removebg-preview (1).png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./js/animation.js"></script>
+    <title>CUSTOMIZETDETAIL-FOR THEM</title>
+  
+   <!-- jquery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+  </head>
+<body>
+  
+ <!-- nav start -->
+<div class="mobile-container">
+  <div class="topnav">
+		<a href="./index.html"><img class="logo" src="./images/logo-removebg-preview (1).png" alt=""></a>
+    <div id="myLinks">
+      
+      <a style="color: black;" href="./index.html">Home</a>
+      <a style="color: black;" href="./product.html">Product</a>
+      <a  style="color: black;"href="./blog/blog.html">Blog</a>
+      <a  style="color: black;"href="./customize.html">Customize Packing</a>
+      <a  style="color: black;"href="./contact.html">Contact</a>
+    </div>
+    <a href="javascript:void(0);"  style="color: black;"class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- navigation ended -->
+  <!-- End smartphone / tablet look -->
+  </div>
+  <div class="night">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+</div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+ <!-- nav ends -->
+  
+  <main class="container" style="padding: 50px 100px;">
+
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column" data-aos="flip-up" data-aos-duration="3000" >
+      <img data-image="black" src="images/black.png" alt="">
+      <img data-image="blue" src="images/blue.png" alt="">
+      <img  id="proimg" class="active w-75" src=""  alt="" style="width: 75%;">
+    </div>
+    <!-- ------Right Column-----> 
+    <div class="right-column" >
+
+    <!-- Product Description -->
+      <div class="product-description">
+        <span id="procat"></span>
+        <h1 id="proname"></h1>
+        <p id="prodesc"></p>
+      </div>
+
+      <!-- Product Configuration -->
+      <div class="product-configuration">
+
+        <!-- Product Color -->
+        <div class="product-color">
+
+        </div>
+
+        <!-- Cable Configuration -->
+        <div class="cable-config">
+          <span>SIZE-OPTION</span>
+
+          <div class="cable-choose">
+            <button>Large</button>
+            <button>Medium</button>
+            <button>Small</button>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <span id="proprice">PKR:2000</span>
+        <button id="pay" ><a href="./payment.html" id="addtocart" class="cart-btn">BUY NOW</button></a>
+      </div>
+    </div>
+  </main>
+    <footer  data-aos="zoom-in-down" data-aos-duration="1500">
+        <h4 class="heading">Book your gifts for any occasion! Contact us now for Delivery</h4>
+        <div class="icon">
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+          <p id="copyright">&copy;ALL COPYRIGHTS RESERVED</p>
+        </div>
+      </footer>
+      <!-- <script src="js/product.js"></script> -->
+      <script src="js/customize.js"></script>
+    
+      <script>
+        AOS.init();
+        $(document).ready(function(){
+          var id = sessionStorage.getItem("id");
+
+          for (const i of product) {
+            if(i.id == id){
+              $("#proimg").attr("src",i.image);
+              $("#proname").text(i.name);
+              $("#prodesc").text(i.description);
+              $("#procat").text(i.category);
+              $("#proprice").text(i.price);
+            }
+          }
+        })
+      </script> 
+
+</body>
+</html>

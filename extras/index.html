@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- <aos link> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <!--ends-->
+  <!-- icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- icon ends -->
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <!-- bootstap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js"></script>
+  <script src="./js/animation.js"></script>
+  <link rel="stylesheet" href="./css/button.css">
+  <link rel="icon" href="./images/logo-removebg-preview (1).png">
+    <title>HOME-FOR THEM</title>
+</head>
+<body>
+
+  <div id="preloader"></div>
+  <div id="starshine">
+    <div class="template shine"></div>
+  </div>
+  <!-- nav start -->
+    <nav class="shift">
+    <img id="logo" src="./images/logo-removebg-preview (1).png" alt="">
+     <span>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./blog/blog.html">Blog</a></li>
+        <li><a href="./customize.html">Customize packing</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </span>
+  </nav>   
+  <!-- nav end --> 
+ <!-- slider start --> 
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div> 
+     <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/slider1f.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 id="firstslider">A Trendy Luxury  Gift Collection</h1>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slider2ff.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 id="secondslider">Giving you a Best Gift</h1>
+          <p></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slide3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 id="thirdslider">A Moments of Choosing the Best Gift</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
+ 
+  <!-- slider end -->
+  <!-- cards start -->
+  <div id="cardpanel">
+    <div id="card1" data-aos="fade-up" data-aos-duration="3000">
+      <div id="cards" class="flex flex-col justify-between p-4 leading-normal">
+        <img id="image" class=" object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card9.jpg" alt="">
+        <p class="mb-3 font-bold  text-white 700 dark:text-black-400"><br> If you are choosy, we have a lot of varieties.</p>
+      </div>
+    </div>
+
+    <div id="card2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+      <div id="cards" class="flex flex-col justify-between p-4 leading-normal">
+        <img id="image" class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card1.jpg" alt="">
+
+        <p class="mb-3 font-bold text-blue-700 dark:text-white-400"> <br> Find the right connection with our gifts</p>
+      </div>
+
+    </div>
+    <div id="card3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <div id="cards" class="flex flex-col justify-between p-4 leading-normal">
+
+        <img id="image" class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card3.jpg" alt="">
+
+        <p class="mb-3 font-bold text-blue-700 dark:text-black-400"> <br>Good Gifts for Good Relations</p>
+      </div>
+
+    </div>
+    <div id="card4" data-aos="fade-up" data-aos-duration="3000">
+
+
+      <div id="cards" class="flex flex-col justify-between p-4 leading-normal">
+        <img id="image" class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card4.jpg" alt="">
+
+        <p class="mb-3 font-bold text-white-700 dark:text-white-400"> <br>Amazing gifts with a lot of options to choose from.</p>
+      </div>
+
+    </div>
+    <div id="card9" data-aos="fade-up" data-aos-duration="3000">
+
+
+      <div class="flex flex-col justify-between p-4 leading-normal">
+        <img id="image" class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card9.jpg" alt="">
+
+        <p class="mb-3 font-black text-blue-700 dark:text-black-400">Make them realize that you care for them.</p>
+      </div>
+
+    </div>
+    <div id="card6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+
+      <div id="cards" class="flex flex-col justify-between p-4 leading-normal">
+        <img id="image" class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+          src="./images/card6.jpg" alt="">
+        <p class="mb-3 font-bold text-white-700 dark:text-white-400">Your quest for the perfect gifts ends here.</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- ourstory -->
+  <div id="ourstory" data-aos="zoom-in-down" data-aos-duration="1500">
+    <div id="story1">
+      <center> <b>
+          <h5>OUR STORY</h5>
+        </b> </center>
+      <p id="hamarikahani">sam ipsum. Quam, ipsum. Rem odio quod, et dolor iure ab magnam tempore tenetur minima
+        aspernatur. Architecto
+        voluptatum magni error quam repudiandae rem, nemo veniam ea, fugit velit pariatur tempora eligendi! Molestias
+        repellat officia pariatur nam ipsam sunt nulla? <br>Mollitia ab modi facere numquam quas excepturi corrupti
+        omnis a,
+        eos voluptates obcaecati ducimus velit veritatis quae nobis et optio molestias? Porro sequi dolorum maxime
+      </p>
+      <a href="./blog/blog.html"><button id="readmore">READ MORE</button></a>
+      <a target="_blank" href="https://twitter.com/kamildyrek"><svg
+      style="width:2em;height:2em;position:fixed;top:1em;left:1em;opacity:.8;" viewBox="0 0 24 24"></svg></a>
+    </div>
+    <div id="story2">
+      <img id="team" src="./images/pexels-rfstudio-3810753.jpg" alt="">
+    </div>
+  </div>
+  <footer  data-aos="zoom-in-down" data-aos-duration="2000">
+    <h4 class="heading">Book your gifts for any occassion! Contact us now for Delivery</h4>
+    <div class="icon">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+      <p id="copyright">&copy;ALL COPYRIGHTS RESERVED</p>
+    </div>
+  </footer>
+  
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load" , function(){
+       loader.style.display = "none";
+    })
+  </script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
